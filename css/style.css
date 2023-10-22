@@ -1,0 +1,38 @@
+.header {
+	width: 100%;
+	height: 4.5625rem;
+	border: 1px solid black;
+	border-radius: 1.25rem;
+	border: 4px solid #FE0000;
+	background: #D9CC57;
+
+}
+
+.header__title {
+	text-align: center;
+	font-family: Inter;
+	font-size: 2.5rem;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+}
+
+.header__rectangle {
+	height: 50%;
+	width: 100%;
+	background-color: #CCEEA2;
+	display: grid;
+
+}
+
+.info-buttons {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.info-buttons__bilde {
+	border: 0.2rem solid black;
+	border-radius: 0.2rem;
+
+}
