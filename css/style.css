@@ -10,7 +10,7 @@
 
 .header__title {
 	text-align: center;
-	font-family: Inter;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 2.5rem;
 	font-style: normal;
 	font-weight: 900;
@@ -28,11 +28,21 @@
 .info-buttons {
 	display: flex;
 	justify-content: space-between;
-
 }
+
+
+
 
 .info-buttons__bilde {
 	border: 0.2rem solid black;
-	border-radius: 0.2rem;
+	border-radius: 0.5rem;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-align: center;
+	height: 3rem;
+	width: 6rem;
+}
 
+.info-buttons__bilde:hover {
+	background-color: #FE0000;
+	transform: rotate(5deg);
 }
