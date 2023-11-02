@@ -1,10 +1,17 @@
+body {
+	/*display: flex;*/
+	justify-content: center;
+	align-items: center;
+}
+
 .header {
 	width: 100%;
 	height: 4.5625rem;
 	border: 1px solid black;
-	border-radius: 1.25rem;
-	border: 4px solid #FE0000;
-	background: #D9CC57;
+	border: 4px solid #DFA5A5;
+	background: #FFF38A;
+
+
 
 }
 
@@ -15,34 +22,118 @@
 	font-style: normal;
 	font-weight: 900;
 	line-height: normal;
+	text-align: center;
+
 }
 
-.header__rectangle {
-	height: 50%;
+.slideshow {
+	width: 500px;
+	height: 400px;
+	/* top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+	position: relative;
+	margin: auto;
+	transform: translate(0%, 50%);
+
+
+
+}
+
+.slideshow__slide {
+	position: absolute;
 	width: 100%;
-	background-color: #CCEEA2;
-	display: grid;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	display: none;
+}
+
+.slideshow__slide--visible {
+	display: block;
+}
+
+.slideshow__slides {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 }
 
-.info-buttons {
+
+
+
+
+
+.slideshow__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 1rem;
+
+}
+
+.slideshow__controls {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	flex-flow: row nowrap;
+
+
+}
+
+.slideshow__control-button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0.2rem;
+
 }
 
 
 
-
-.info-buttons__bilde {
-	border: 0.2rem solid black;
-	border-radius: 0.5rem;
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	text-align: center;
-	height: 3rem;
-	width: 6rem;
+.slideshow__counter {
+	position: absolute;
+	top: 100%;
 }
 
-.info-buttons__bilde:hover {
-	background-color: #FE0000;
-	transform: rotate(5deg);
+.slideshow__dots {
+	position: absolute;
+	top: 110%;
+	display: flex;
+	gap: 1rem;
+}
+
+.slideshow__dots :hover {
+	background-color: #FFF38A;
+}
+
+.slideshow__dot {
+	display: block;
+	background: #DFA5A5;
+	border-radius: 100%;
+	width: 1rem;
+	height: 1rem;
+}
+
+
+.previous {
+	position: relative;
+	left: -25%;
+}
+
+.next {
+	position: relative;
+	left: 25%;
+}
+
+button {
+	background: transparent;
+	border: none;
 }
