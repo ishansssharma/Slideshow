@@ -20,7 +20,6 @@ const decreaseIndex = () => {
 		index = lastIndex;
 	}
 };
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
 const increaseIndex = () => {
 	if (index < lastIndex) {
@@ -31,13 +30,13 @@ const increaseIndex = () => {
 };
 
 const renderSlideClass = () => {
-		slides.forEach(slide => {
-			slide.classList.remove("slideshow__slide--visible");
-		});
+	slides.forEach(slide => {
+		slide.classList.remove("slideshow__slide--visible");
+	});
 	slides[index].classList.add("slideshow__slide--visible");
 }
 const renderCounter = () => {
-		counter.textContent = `${index + 1} of ${totalSlides}`;
+	counter.textContent = `${index + 1} of ${totalSlides}`;
 }
 
 const changeSlide = (event) => {
@@ -58,14 +57,14 @@ const changeSlide = (event) => {
 	renderCounter();
 }
 controls.forEach(button => {
-		button.addEventListener("click", changeSlide);
+	button.addEventListener("click", changeSlide);
 });
 
 dots.forEach(button => {
-		button.addEventListener("click", () => {
-			const dotIndex = Array.from(dots).indexOf(button);
-			setIndex(dotIndex);
-			renderSlideClass();
-			renderCounter();
-		});
+	button.addEventListener("click", () => {
+		const dotIndex = Array.from(dots).indexOf(button);
+		setIndex(dotIndex);
+		renderSlideClass();
+		renderCounter();
+	});
 });
